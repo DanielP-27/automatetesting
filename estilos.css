@@ -1,0 +1,177 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 97, 228);
+}
+
+.div-titulo {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.div-titulo h1 {
+    font-weight: 400;
+}
+
+.contenedor {
+
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Contenedor que agrupa los 2 formularios de la izquierda */
+.left-container {
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 23%;              
+    margin: 50px 50px;           
+    position: relative;    
+
+}
+
+/* ESTILOS FORMULARIO */
+
+.left-container .formulario {
+
+    width: 100%;
+    height: 250px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(250, 230, 230, 0.3);
+    margin-bottom: 15px;  
+    font-weight: 300;
+    font-size: 2em;
+
+}
+
+.contenedor .formulario {
+
+    margin-top: 10px;
+}
+
+/* Ajuste de inputs y botones dentro de cada formulario */
+.left-container .formulario form {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container .formulario form input,
+.left-container .formulario form button {
+
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}   
+
+/* LISTADO DE PRODUCTOS */
+
+.contenedor .div-listado {
+
+    width: 55%;               
+    height: calc(100% - 50px); 
+    margin: 15px 15px;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(248, 237, 237, 0.3);
+}
+
+.contenedor .div-listado h2 {
+
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: rgb(12, 12, 12);
+}
+
+.contenedor .div-listado .div-producto {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0 30px;
+}
+
+.contenedor .div-listado .div-producto p {
+
+    margin: 10px;
+    font-size: 1em;
+    color: rgb(250, 245, 245);
+}
+
+/* Contenedor para los resultados de búsqueda */
+.div-resultados {
+
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: rgb(192, 187, 187);
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 30px;
+}
+
+.div-resultados h3 {
+    font-size: 1.3em;
+    color: rgb(25, 25, 26);
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+}
+
+.btnAgregar {
+
+    padding: 5px 10px;
+    border: none;
+    margin: 0 5px;
+    color: rgb(45, 131, 17);
+    border-radius: 50px;
+}
+
+.btn-editar {
+    background-color: rgb(194, 214, 57);
+    border-radius: 50rem;
+    margin-left: 15px;
+    height: 23px; 
+    width: 50px;  
+}
+
+.btn-eliminar {
+    background-color: red;
+    border-radius: 9rem;
+    margin-left: 10px;
+    height: 23px; 
+    width: 70px;  
+}

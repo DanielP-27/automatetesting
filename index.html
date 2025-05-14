@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Homework 2</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="div-titulo">
+      <h1> Phase 2 - Footwear Inventory </h1>
+  </div>
+
+  <div class="contenedor">
+      <div class="left-container">
+          <div class="formulario">
+              <h5>Products Form</h5>
+              <form action="#" id="formulario">
+                 <input type="text" id="nombre" placeholder="Ingrese el nombre del producto">
+                 <input type="text" id="referencia" placeholder="Numero de referencia">
+                 <button type="submit" id="btnAgregar">Agregar</button>
+              </form>
+          </div> 
+
+          <div class="formulario">
+              <h5><p>Search for product</p></h5>
+              <form action="#" id="formulario-busqueda">
+                 <input type="text" id="busqueda" placeholder="Ingrese producto a buscar">
+                 <button type="submit" id="btnBuscar">Buscar</button>
+              </form>
+          </div>
+      </div>
+
+      <div class="div-listado">
+          <h1>Product List</h1>
+          <div class="div-producto"></div>
+
+          <div class="div-resultados">
+              <h3><P>Search Results</P></h3>
+              <div id="resultados"></div>
+          </div>
+      </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
